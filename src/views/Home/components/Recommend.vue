@@ -25,15 +25,15 @@ export default {
         title: '广州长隆旅游度假区',
         desc: '53231'
       }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/3b/3bd311262ee06d8c90.img.jpg_200x200_c118d7da.jpg',
-        title: '广州长隆旅游度假区',
-        desc: '53231'
+        id: '0002',
+        imgUrl: 'http://img1.qunarzz.com/sight/p0/1709/41/411f234d79457081a3.img.jpg_200x200_ea02ef99.jpg',
+        title: '长隆野生动物园',
+        desc: '72710'
       }, {
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/3b/3bd311262ee06d8c90.img.jpg_200x200_c118d7da.jpg',
-        title: '广州长隆旅游度假区',
-        desc: '53231'
+        id: '0003',
+        imgUrl: 'http://img1.qunarzz.com/sight/p0/1707/ab/abb70c851caaa6d8a3.img.jpg_200x200_b902dd9e.jpg',
+        title: '长隆水上乐园',
+        desc: '32077'
       }]
     }
   }
