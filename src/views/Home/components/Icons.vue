@@ -18,6 +18,9 @@ export default {
   name: 'HomeIcons',
   data () {
     return {
+      swiperOption: {
+        Autoplay: false
+      },
       iconList: [{
         id: '0001',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
