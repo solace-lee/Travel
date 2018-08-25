@@ -50,7 +50,7 @@ export default {
     handleTouchMove (e) {
       if (this.touchStatus) {
         if (this.timer) {
-          clearTimeout (this.timer)
+          clearTimeout(this.timer)
         }
         this.timer = setTimeout(() => {
           const touchY = e.touches[0].clientY - 79
@@ -58,7 +58,7 @@ export default {
           if (select >= 0 && select < this.letters.length) {
             this.$emit('change', this.letters[select])
           }
-        },16)
+        }, 16)
       }
     },
     handleTouchEnd () {
