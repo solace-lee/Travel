@@ -62,7 +62,7 @@ export default {
     right: 0
     bottom: 0
     color: #fff
-    background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))
     .banner-number
       flex: 1
       padding:  0 .2rem
