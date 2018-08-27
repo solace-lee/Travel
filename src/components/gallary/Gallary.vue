@@ -43,8 +43,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.comtainer >>> .swiper-container
-  overflow: inherit
+  .wrapper >>> .swiper-container
+    overflow: inherit
 .container
   display: flex
   flex-direction: column
