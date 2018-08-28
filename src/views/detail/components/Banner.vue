@@ -18,12 +18,15 @@
         </div>
       </div>
     </div>
-    <gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleGallaryClose"></gallary>
+    <fade>
+      <gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleGallaryClose"></gallary>
+    </fade>
   </div>
 </template>
 
 <script>
 import Gallary from '../../../components/gallary/Gallary'
+import Fade from '../../../components/fade/Fade'
 export default {
   name: 'DetailBanner',
   props: {
@@ -32,7 +35,8 @@ export default {
     gallaryImgs: Array
   },
   components: {
-    Gallary
+    Gallary,
+    Fade
   },
   data () {
     return {
