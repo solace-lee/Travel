@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <div class="banner" @click="handleGallaryClick">
-      <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1603/3b/3bd311262ee06d8c90.img.jpg_600x330_cd2e3bf7.jpg">
+      <img class="banner-img" :src="bannerImg">
       <div class="banner-all-info">
         <div class="banner-number">
           <span class="iconfont number-icon">&#xe67f;</span>
@@ -9,7 +9,7 @@
         </div>
         <div class="banner-info">
           <div class="banner-title">
-            广州长隆旅游度假区(AAAAA景区)
+            {{this.sightName}}
           </div>
           <div class="banner-video">
             视频
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <gallary :imgs="imgs" v-show="showGallary" @close="handleGallaryClose"></gallary>
+    <gallary :imgs="gallaryImgs" v-show="showGallary" @close="handleGallaryClose"></gallary>
   </div>
 </template>
 
@@ -26,13 +26,17 @@
 import Gallary from '../../../components/gallary/Gallary'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    gallaryImgs: Array
+  },
   components: {
     Gallary
   },
   data () {
     return {
-      showGallary: false,
-      imgs: ['http://img1.qunarzz.com/sight/p0/1603/3b/3bd311262ee06d8c90.img.jpg_r_800x800_41637b9b.jpg', 'http://img1.qunarzz.com/sight/p0/1603/3b/3bd311262ee06d8c90.img.jpg_r_800x800_41637b9b.jpg']
+      showGallary: false
     }
   },
   methods: {
